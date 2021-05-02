@@ -15,6 +15,7 @@ class AccessController extends Controller
     {
         $accesses = new AccessModel();
         $result = $accesses->showAll();
+    
 
         View::render('pages/accesses/index.php', ['accesses' => $result]);
     }

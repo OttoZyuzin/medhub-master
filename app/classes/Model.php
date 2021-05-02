@@ -59,7 +59,7 @@ abstract class Model {
     {
         $sql = $this->sctuctureQuery($table, $params, $group_key, $table_key);
 
-        $result = $this->db->query($sql);
+      //  $result = $this->db->query($sql);
 
         return $result;
     }

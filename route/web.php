@@ -49,7 +49,13 @@ $router->add('access/update', ['controller' => 'AccessController', 'action' => '
 $router->add('access/warning?{id}', ['controller' => 'AccessController', 'action' => 'warning']);
 $router->add('access/delete?{id}', ['controller' => 'AccessController', 'action' => 'delete']);
 
-
+$router->add('categories', ['controller' => 'CategoryController', 'action' => 'index']);
+$router->add('category/add', ['controller' => 'CategoryController', 'action' => 'show']);
+$router->add('category/store', ['controller' => 'CategoryController', 'action' => 'store']);
+$router->add('category/edit?{id}', ['controller' => 'CategoryController', 'action' => 'edit']);
+$router->add('category/update', ['controller' => 'CategoryController', 'action' => 'update']);
+$router->add('category/warning?{id}', ['controller' => 'CategoryController', 'action' => 'warning']);
+$router->add('category/delete?{id}', ['controller' => 'CategoryController', 'action' => 'delete']);
 
 
 // линк для примера. Использоваться не будет
